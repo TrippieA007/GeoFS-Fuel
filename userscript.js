@@ -241,7 +241,7 @@ window.fuel.getStats = function(id) {
             ret = [75,189];
             break;
         case 10:
-            ret = [4600,84600];
+            ret = [4000,84600];
             break;
         case 11:
             ret = [4.3,22]; //These are in kW & kWh for now
@@ -277,10 +277,10 @@ window.fuel.getStats = function(id) {
             ret = [10,48];
             break;
         case 24:
-            ret = [2400,37200];
+            ret = [1500,37200];
             break;
         case 25:
-            ret = [3216,45220];
+            ret = [3216,47890];
             break;
         case 26:
             ret = [100,1442];
@@ -296,6 +296,78 @@ window.fuel.getStats = function(id) {
             break;
         case 40:
             ret = [5,17];
+            break;
+        case 2973: // Airbus A350-1000 (mod)
+            ret = [2312, 44436];  // [gallons/hour, gallons]
+            break;
+        case 3575: // Boeing 787-9
+            ret = [1850, 33400];
+            break;
+        case 3180: // Boeing 787-X
+            ret = [1870, 33400];
+            break;
+        case 3179: // Boeing 787-X BA
+            ret = [1870, 33400];
+            break;
+        case 2899: // Airbus A220-300
+            ret = [670, 5680];
+            break;
+        case 5156: // Airbus A318
+            ret = [740, 6350];
+            break;
+        case 2879: // Airbus A319
+            ret = [780, 6588];
+            break;
+        case 3534: // Airbus A320-214
+            ret = [800, 6588];
+            break;
+        case 3011: // Airbu A320-232
+            ret = [805, 6588];
+            break;
+        case 2871: // Airbus A320 Neo
+            ret = [668, 7060];
+            break;
+        case 5086: // Airbus A321-211
+            ret = [925, 6555];
+            break;
+        case 4646: // Airbus A321 Neo
+            ret = [928, 8700];
+            break;
+        case 2856: // Airbus A330-200
+            ret = [1478, 36750];
+            break;
+        case 244: // Airbus A330-300
+            ret = [1800, 31275];
+            break;
+        case 4631: // Airbus A330-900
+            ret = [1375, 36755];
+            break;
+        case 2951: // Airbus A340-300
+            ret = [2050, 37155];
+            break;
+        case 2153: // Airbus A340-600
+            ret = [2450, 52885];
+            break;
+        case 3054: // Boeing 737-8
+            ret = [707, 6855];
+            break;
+        case 3180: // Boeing 737 Max 8
+            ret = [707, 6855];
+            break;
+        case 5409: // Boeing 747-4
+            ret = [3500, 48400];
+            break;
+        case 252: // Boeing 747-8F LRX
+            ret = [3650, 59735];
+            break;
+        case 5193: // Boeing 747-8i
+            ret = [3000, 63035];
+            break;
+        case 1023: // MD11
+            ret = [2120, 38615];
+            break;
+        case 240: // Boeing 777-200er
+            ret = [2000, 45220];
             break;
         default:
             ret = [-1, -1];
